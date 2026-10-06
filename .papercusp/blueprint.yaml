@@ -1,0 +1,16 @@
+id: pot-review-pilot
+extends: coding-factory
+knobs:
+  harnessKind: coding
+  testCommand: npm test
+  fromRepo:
+    toolchains:
+      - node
+    packageManager: npm
+    monorepo: false
+    frontend: false
+    isGitRepo: true
+    testCommandSource: package.json
+    testCommandVerified: true
+    harvestedDocs: []
+description: Coding harness generated from repo (node).
