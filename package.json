@@ -1,0 +1,8 @@
+{
+  "name": "pot-review-pilot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pilot fixture for Papercusp working-copy (review) pots: agents work in a fork, and their combined work reaches this repository only through a PR.",
+  "scripts": { "test": "node --test" },
+  "license": "MIT"
+}
