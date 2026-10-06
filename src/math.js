@@ -5,4 +5,9 @@ function add(a, b) {
   return a + b;
 }
 
-module.exports = { add };
+/** Product of two numbers. */
+function multiply(a, b) {
+  return a * b;
+}
+
+module.exports = { add, multiply };
