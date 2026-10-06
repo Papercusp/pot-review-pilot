@@ -1,0 +1,20 @@
+id: pot-review-pilot
+extends: coding-factory
+knobs:
+  harnessKind: coding
+  testCommand: npm test
+  # TEMPORARY MITIGATION (WI-10006301, plan pot-review-integration-mode-2026-10-05 D-011):
+  # a working-copy pot integrates on staging. Remove once the derived layout ships to bg-host.
+  releaseGate:
+    integrationBranch: staging
+  fromRepo:
+    toolchains:
+      - node
+    packageManager: npm
+    monorepo: false
+    frontend: false
+    isGitRepo: true
+    testCommandSource: package.json
+    testCommandVerified: true
+    harvestedDocs: []
+description: Coding harness generated from repo (node).
